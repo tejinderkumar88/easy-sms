@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+    <![endif]-->
+    <!--[if IE 7]>         
+    <html class="no-js lt-ie9 lt-ie8" lang="">
+        <![endif]-->
+        <!--[if IE 8]>         
+        <html class="no-js lt-ie9" lang="">
+            <![endif]-->
+            <!--[if gt IE 8]><!--> 
+            <html class="no-js" lang="en">
+                <!--<![endif]-->
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>EasiSMS :: System Settings</title>
+                    <meta name="description" content="">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="icon" href="images/EasiSMS.ico" type="image/x-icon">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/all.css">
+                    <link rel="stylesheet" href="css/sumoselect.css">
+                    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+                    <link rel="stylesheet" href="css/cs-skin-elastic.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link rel="stylesheet" href="css/custom-style.css">
+                    <link rel="stylesheet" href="css/responsive.css">
+                    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+                </head>
+                <body>
+                    <header id="header" class="header d-flex align-items-center justify-content-between flex-xs-column">
+                        <div class="top-left">
+                            <div class="navbar-header">
+                                <div class="user-area dropdown icon-dropdown float-left">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/sidebar-toggle.png" alt="toggle-icon" />
+                                    </a>
+                                    <div class="user-menu dropdown-menu">
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiEscalate.png" alt="EasiEscalate" /> EasiEscalate
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiInterative.png" alt="EasiInterative" /> EasiInterative
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EEMS.png" alt="EEMS" /> EEMS
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiSmartCast.png" alt="EasiSmartCast" /> EasiSmartCast
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiXchange.png" alt="EasiXchange" /> EasiXchange
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiFailOver.png" alt="EasiFailOver" /> EasiFailOver
+                                        <span class="toltip">
+                                        This feature is not <br> applicable in your <br> package
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="navbar-brand expaned-nav" href="dashboard.html">
+                                <img src="images/company-logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="top-right">
+                            <div class="header-menu">
+                                <ul type="none" class="align-items-center lg-none xs-flex m-0">
+                                    <li>
+                                        <a href="javascript:;" id="customtoggle">
+                                        <i class="menu-icon fas fa-bars"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/message.png" alt="message" />
+                                    <span class="count bg-success">3</span>
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="modal" data-target="#about-window" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/About.png" alt="about-icon" />
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/help.png" alt="about-icon" />
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="user-avatar rounded-circle" src="images/profile.png" alt="User Avatar">
+                                    <span class="usrnm">James Andrew</span>
+                                    <i class="ml-3 fas fa-angle-down"></i>
+                                    </a>
+                                    <div class="user-menu dropdown-menu">
+                                        <a class="nav-link" href="#">
+                                        <i class="far fa-user"></i>Customer Profile
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <i class="fas fa-lock"></i>Change Password
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <i class="fas fa-sign-out-alt"></i>EEMS Admin | Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Left Panel -->
+                    <aside id="left-panel" class="left-panel">
+                        <nav class="navbar navbar-expand-sm navbar-default">
+                            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="hidden-in-xs">
+                                        <a href="javascript:;" id="menuToggle">
+                                            <i class="menu-icon fas fa-bars"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <i class="menu-icon fas fa-chart-bar"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-envelope"></i>Messages
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="new-sms.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>New SMS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-inbox.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Inbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-outbox.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Outbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-sent-items.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-file-video"></i>MMS Messages
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="new-mms.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>New MMS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-inbox.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Inbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-outbox.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Outbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-sent-items.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-snowflake"></i>Configure
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="devices.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Devices
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Outgoing Routes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Incoming Rules
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown show">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon fas fa-cog"></i>Settings
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu show">
+                                            <li class="active">
+                                                <a href="javascript:;">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>System Settings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="blacklist.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Blacklist
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="unsubscribed.html">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>Unsubscribed List
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-file-alt"></i>Reports
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>SMS Usage
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="menu-icon invisible fas fa-circle"></i>MMS Usage
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                            <i class="menu-icon fab fa-react"></i>ACL
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                    </aside>
+                    <!-- /#left-panel -->
+                    <!-- Right Panel -->
+                    <div id="right-panel" class="right-panel system-settings">
+                        <!-- Header-->
+                        <!-- /#header -->
+                        <!-- Content -->
+                        <div class="content">
+                            <!-- Animated -->
+                            <div class="animated fadeIn">
+                                <!-- /Chart -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card mb-0">
+                                            <div class="card-body p-t-r-b0-l">
+                                                <div class="custom-table-header d-flex align-items-center justify-content-between">
+                                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 pl-0 pr-0">
+                                                        <div class="form-group">
+                                                            <select class="form-control control-form down-arrow" id="Change-tabs">
+                                                                <option value="General">General</option>
+                                                                <option value="House_Keeping">House Keeping</option>
+                                                                <option value="Unsubscribe">Unsubscribe</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="save-btn-wrp">
+                                                        <button class="btn btn-custom save-table-btn" data-toggle="tooltip" title="Save">
+                                                            <i class="fas fa-save"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="general-tab tab-look" rel="General" id="General">
+                                                    <div class="table-responsive">
+                                                        <table class="custom-table table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Key Name</th>
+                                                                    <th>Key Value</th>
+                                                                    <th>Remarks</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td valign="middle">ECMDExe</td>
+                                                                    <td valign="middle">
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0" value="C:\Program Files\Inspire-Tech\EasiSMS\ECMD\Exe\Easi" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td valign="middle">The full path of EasiCommand runtime executable.</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td valign="middle">Default Retry</td>
+                                                                    <td valign="middle">
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0 width_100_px" value="0" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td valign="middle">Default number of retries for new SMS.</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>HA</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <select class="form-control control-form rounded-0 down-arrow width_100_px">
+                                                                                <option value="0">0</option>
+                                                                                <option value="1">1</option>
+                                                                                <option value="2">2</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Default number of retries for new SMS.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="house-keeping-tab tab-look" rel="House_Keeping" id="House_Keeping">
+                                                    <div class="table-responsive">
+                                                        <table class="custom-table table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Key Name</th>
+                                                                    <th>Key Value</th>
+                                                                    <th>Remarks</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>SetArchivalPeriod</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0" value="3" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Archival period for sent items of both EW and EEMS mod...</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>IncomArchivalPeriod</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0" value="0" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Archival period for incoming items of both EW and EEMS...</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="unsubscribe-tab tab-look" rel="Unsubscribe" id="Unsubscribe">
+                                                    <div class="table-responsive">
+                                                        <table class="custom-table table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Key Name</th>
+                                                                    <th>Key Value</th>
+                                                                    <th>Remarks</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>UnsubscribeKeyword</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0 width_100_px" value="UNSUB" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>SMS unsubscribed keyword</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>SubscribeKeyword</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0 width_100_px" value="SUB" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>SMS subscribed keyword</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>UnsubscribeAutoReply</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0" value="You have been unsubscribed successfully" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>SMS unsubscribe auto reply</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>SubscribeAutoReply</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <input type="text" class="form-control control-form rounded-0" value="You have been subscribed successfully" />
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>SMS subscribe auto reply</td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>UnsubscribeAutoReplyOn</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <select class="form-control control-form rounded-0 down-arrow width_100_px">
+                                                                                <option value="No">No</option>
+                                                                                <option value="Yes">Yes</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Whether to send autoreply when user unsubscribes</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>SubscribeAutoReplyOn</td>
+                                                                    <td>
+                                                                        <div class="form-group mb-0">
+                                                                            <select class="form-control control-form rounded-0 down-arrow width_100_px">
+                                                                                <option value="No">No</option>
+                                                                                <option value="Yes">Yes</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </td>
+                                                                    <td>Whether to send autoreply when user subscribes</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                                    <div class="form-group mb-0">
+                                                        <select style="width: 127px;" class="form-control control-form down-arrow">
+                                                            <option value="15 per page">15 per page</option>
+                                                            <option value="30 per page">30 per page</option>
+                                                            <option value="60 per page">60 per page</option>
+                                                            <option value="120 per page">120 per page</option>
+                                                            <option value="240 per page">240 per page</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="pagination-div">
+                                                        <ul class="page-ul d-flex align-items-center justify-content-center mb-0" type="none">
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/arrow-left.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/double-left-arrow.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li class="active-page-with-border">
+                                                                <a href="javascript:;">1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    /5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/double-right-arrow.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/arrow-right.svg" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>                                              
+                                                    <div class="total-item-label">1 - 15 out of 260 items</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .animated -->
+                        </div>
+                        <!-- /.content -->
+                        <div class="clearfix"></div>
+                        <!-- / Update modal -->
+                        <div class="modal fade custom-modal-window update-window" id="update-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <div class="pop-tick-icon d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-check fa-2x"></i>
+                                        </div>
+                                        <h3 class="m-tb-20">Thank You!</h3>
+                                        <p class="m-0">Your page is updated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Reply modal -->
+                        <div class="modal fade custom-modal-window reply-window" id="reply-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Reply</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Mobile Number</label>
+                                                    <input type="tel" class="form-control control-form" value="65800000081" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Message text</label>
+                                                    <textarea class="form-control control-form text-block-height" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Schedule</label>
+                                                    <input type="text" name="schedule" value="09/06/2019 6:25 PM" class="form-control control-form" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">EasiApp Channel</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="ABS">ABS</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Device</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="Failover Device">Failover Device</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-end">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Delete modal -->
+                        <div class="modal fade custom-modal-window mms-delete-window" id="mms-delete-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Delete Item(s)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-center">Are you sure you want to delete <b>ALL</b> items? <br> Please enter confirmation code below to <br> proceed.</p>
+                                        <div class="row mb-4">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <span class="labl-look">Confirmation Code:</span>
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                                                <span class="field-look">1491287487</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+                                                <span class="labl-look">Enter Code:</span>
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                                                <div class="form-group">
+                                                    <input type="text" class="form-control control-form" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Export modal -->
+                        <div class="modal fade custom-modal-window export-window" id="export-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Export To Excel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p>Total: <b>2 Item(s)</b> Selected</p>
+                                        <div class="radio-wrp d-inline-block">
+                                            <label class="radio-container">Item(s) Selected
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Current Page
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Whole Grid
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / About Us modal -->
+                        <div class="modal fade custom-modal-window" id="about-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">About Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="custom-tab">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="about-eems-tab" data-toggle="tab" href="#about-eems" role="tab" aria-controls="about-eems" aria-selected="true">About EEMS</a>
+                                                    <a class="nav-item nav-link" id="licenses-tab" data-toggle="tab" href="#licenses" role="tab" aria-controls="licenses" aria-selected="false">Licenses</a>
+                                                    <a class="nav-item nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Us</a>
+                                                    <a class="nav-item nav-link" id="Conditions-tab" data-toggle="tab" href="#Conditions" role="tab" aria-controls="Conditions" aria-selected="false">Terms & Conditions</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="about-eems" role="tabpanel" aria-labelledby="about-eems-tab">
+                                                    <p>EasiSMS Enterprise Messageing Server <br> Version 7.1.4</p>
+                                                    <img src="images/About-logo.png" class="img-responsive" alt="Inspire-tech-logo" />
+                                                    <a href="javascript:;">www.easisms.com</a>
+                                                    <p>2019 &copy; Inspire-Tech Pte Ltd.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="licenses" role="tabpanel" aria-labelledby="licenses-tab">
+                                                    <p>Licenses</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                                    <ul type="none">
+                                                        <li>
+                                                            <i class="fas fa-phone-alt"></i> 
+                                                            +65 6255 0010
+                                                        </li>
+                                                        <li>
+                                                            <i class="fas fa-phone-alt"></i> 
+                                                            +65 6255 0416
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="tab-pane fade" id="Conditions" role="tabpanel" aria-labelledby="Conditions-tab">
+                                                    <div class="tab-inner">
+                                                        <h3>Lorem Ipsum</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                        <h3>Lorem Ipsum</h3>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer -->
+                        <footer class="site-footer p-0 text-center">
+                            <div class="footer-inner bg-white">
+                                <p class="m-0">Copyright 2000-2019 Tekki Web Solutions. All right reserved.</p>
+                            </div>
+                        </footer>
+                        <!-- /.site-footer -->
+                    </div>
+                    <!-- /#right-panel -->
+                    <!-- Scripts -->
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/moment.min.js"></script>
+                    <script src="js/daterangepicker.min.js"></script>
+                    <script src="js/jquery.sumoselect.js"></script>
+                    <script src="js/jquery.matchHeight.min.js"></script>
+                    <script src="js/main.js"></script>
+                    <script type="text/javascript">
+                        jQuery('.SlectBox').hide();
+                        jQuery('.sldr-fltr').click(function () {
+                            jQuery('.SlectBox').show();
+                            jQuery('.SlectBox').SumoSelect({ 
+                                selectAll: true,
+                                okCancelInMulti: true,
+                            });
+                        });
+                    </script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="datefrom"]').daterangepicker({
+                                "opens": 'right',
+                                "drops": 'down',
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                startDate: moment().startOf('hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY'
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="dateto"]').daterangepicker({
+                                "opens": 'right',
+                                "drops": 'down',
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                // startDate: moment().startOf('hour'),
+                                endDate: moment().startOf('hour').add(32, 'hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY'
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="schedule"]').daterangepicker({
+                                "opens": 'left',
+                                "drops": 'up',
+                                "timePicker": true,
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                startDate: moment().startOf('hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY hh:mm A'
+                                }
+                            });
+                        });
+                    </script>
+                    <!--Local Stuff-->
+                    <script type="text/javascript">
+                        jQuery('#customtoggle').click(function () {
+                            jQuery('#left-panel').slideToggle();
+                        });
+                    </script>
+                    <!-- <script type="text/javascript">
+                        jQuery( ".open-custom-slectbox" ).focus(function () {
+                            jQuery('.custom-slectbox').hide();
+                            jQuery(this).next().show();
+                        });
+                        </script> -->
+                    <script type="text/javascript">
+                        jQuery(".select-all").click(function () {
+                            jQuery(this).closest('.custom-slectbox').find('input:checkbox').not(this).prop('checked', this.checked);
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function () {
+                            jQuery('[data-toggle="tooltip"]').tooltip();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.fas.fa-redo-alt').click(function () {
+                            jQuery('.update-window').modal('show'); 
+                            setTimeout(function() {
+                                jQuery('.update-window').modal('hide');
+                                jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            }, 3000);
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.table-filter-wrp ul.bttn-bar li a').click(function () {
+                            jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            jQuery(this).closest('.table-filter-wrp ul.bttn-bar li').addClass('btn-look');
+                            event.preventDefault();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.close, .btn').click(function () {
+                            if (jQuery('.table-filter-wrp ul.bttn-bar li').hasClass('btn-look')) {
+                                jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            }
+                            event.preventDefault();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.open-custom-filter-div a').click(function () {
+                            jQuery('.custom-filter-div').show();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery(".custom-filter-div").delegate(".close", "click",function(){
+                            jQuery('.custom-filter-div').hide();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.dropdown-menu').on('click', function(e) {
+                            if(jQuery(this).hasClass('show')) {
+                                e.stopPropagation();
+                            }
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('#General').show();
+                        jQuery('#House_Keeping').hide();
+                        jQuery('#Unsubscribe').hide();
+                        jQuery(function() {
+                          jQuery('#Change-tabs').change(function(){
+                            jQuery('.tab-look').hide();
+                            jQuery('#' + jQuery(this).val()).show();
+                          });
+                        });
+                    </script>
+                </body>
+            </html>

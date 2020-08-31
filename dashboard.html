@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EasiSMS :: Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/EasiSMS.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/sumoselect.css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+    <link rel="stylesheet" href="css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+</head>
+
+<body>
+    <header id="header" class="header d-flex align-items-center justify-content-between flex-xs-column">
+        <div class="top-left">
+            <div class="navbar-header">
+                <div class="user-area dropdown icon-dropdown float-left">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/sidebar-toggle.png" alt="toggle-icon" />
+                    </a>
+                    <div class="user-menu dropdown-menu">
+                        <a class="nav-link" href="#">
+                            <img src="images/EasiEscalate.png" alt="EasiEscalate" /> EasiEscalate
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img src="images/EasiInterative.png" alt="EasiInterative" /> EasiInterative
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img src="images/EEMS.png" alt="EEMS" /> EEMS
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img src="images/EasiSmartCast.png" alt="EasiSmartCast" /> EasiSmartCast
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img src="images/EasiXchange.png" alt="EasiXchange" /> EasiXchange
+                        </a>
+                        <a class="nav-link" href="#">
+                            <img src="images/EasiFailOver.png" alt="EasiFailOver" /> EasiFailOver
+                            <span class="toltip">
+                                This feature is not <br> applicable in your <br> package
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-brand expaned-nav" href="javascript:;">
+                    <img src="images/company-logo.png" alt="Logo">
+                </a>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="header-menu">
+                <ul type="none" class="align-items-center lg-none xs-flex m-0">
+                    <li>
+                        <a href="javascript:;" id="customtoggle">
+                            <i class="menu-icon fas fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/message.png" alt="message" />
+                        <span class="count bg-success">3</span>
+                    </a>
+                </div>
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle active" data-toggle="modal" data-target="#about-window" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/About.png" alt="about-icon" />
+                    </a>
+                </div>
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="images/help.png" alt="about-icon" />
+                    </a>
+                </div>
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="user-avatar rounded-circle" src="images/profile.png" alt="User Avatar">
+                        <span class="usrnm">James Andrew</span>
+                        <i class="ml-3 fas fa-angle-down"></i>
+                    </a>
+                    <div class="user-menu dropdown-menu">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-user"></i>Customer Profile
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-lock"></i>Change Password
+                        </a>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-sign-out-alt"></i>EEMS Admin | Logout
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-in-xs">
+                        <a href="javascript:;" id="menuToggle">
+                        	<i class="menu-icon fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="javascript:;">
+                        	<i class="menu-icon fas fa-chart-bar"></i>Dashboard
+                        </a>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<i class="menu-icon far fa-envelope"></i>Messages
+                        </a>
+                        <ul class="sub-menu children dropdown-menu">
+                        	<li>
+                        		<a href="new-sms.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>New SMS
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="sms-inbox.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Inbox
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="sms-outbox.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Outbox
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="sms-sent-items.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                        		</a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<i class="menu-icon far fa-file-video"></i>MMS Messages
+                        </a>
+                        <ul class="sub-menu children dropdown-menu">
+                        	<li>
+                        		<a href="new-mms.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>New MMS
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="mms-inbox.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Inbox
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="mms-outbox.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Outbox
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="mms-sent-items.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                        		</a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<i class="menu-icon far fa-snowflake"></i>Configure
+                        </a>
+                        <ul class="sub-menu children dropdown-menu">
+                        	<li>
+                        		<a href="devices.html">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Devices
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="javascript:;">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Outgoing Routes
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="javascript:;">
+                        			<i class="menu-icon invisible fas fa-circle"></i>Incoming Rules
+                        		</a>
+                        	</li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<i class="menu-icon fas fa-cog"></i>Settings
+                        </a>
+                        <ul class="sub-menu children dropdown-menu show">
+                            <li>
+                                <a href="system-settings.html">
+                                    <i class="menu-icon invisible fas fa-circle"></i>System Settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="blacklist.html">
+                                    <i class="menu-icon invisible fas fa-circle"></i>Blacklist
+                                </a>
+                            </li>
+                            <li>
+                                <a href="unsubscribed.html">
+                                    <i class="menu-icon invisible fas fa-circle"></i>Unsubscribed List
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        	<i class="menu-icon far fa-file-alt"></i>Reports
+                        </a>
+                        <ul class="sub-menu children dropdown-menu">
+                        	<li>
+                        		<a href="javascript:;">
+                        			<i class="menu-icon invisible fas fa-circle"></i>SMS Usage
+                        		</a>
+                        	</li>
+                        	<li>
+                        		<a href="javascript:;">
+                        			<i class="menu-icon invisible fas fa-circle"></i>MMS Usage
+                        		</a>
+                        	</li>
+                    	</ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">
+                        	<i class="menu-icon fab fa-react"></i>ACL
+                        </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        
+        <!-- /#header -->
+        <!-- Content -->
+        <div class="content">
+            <!-- Animated -->
+            <div class="animated fadeIn">
+                <!-- Widgets  -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card orange">
+                            <div class="card-body">
+                                <div class="crd-wrp d-flex align-items-center justify-content-between">
+                                	<div class="stat-text crd-inr">
+                                		<span class="count">45</span>
+                                	</div>
+                                	<div class="crd-inr">
+                                		<img src="images/phone.png" alt="Mobile" />
+                                	</div>
+                                </div>
+                                <div class="crd-wrp">
+                                	<div class="box-lbl d-flex align-items-center justify-content-start">
+                                		<div class="d-flex align-items-center justify-content-start green-lbl">
+                                			<span>15</span>
+                                		</div>
+                                		<div class="d-flex align-items-center justify-content-start red-lbl">
+                                			<span>15</span>
+                                		</div>
+                                		<div class="d-flex align-items-center justify-content-start grey-lbl">
+                                			<span>15</span>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                            	<i class="far fa-calendar"></i> 18/04/2019
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card green">
+                            <div class="card-body">
+                                <div class="crd-wrp d-flex align-items-center justify-content-between">
+                                	<div class="stat-text crd-inr">
+                                		<span class="count">556</span>
+                                	</div>
+                                	<div class="crd-inr">
+                                		<img src="images/Incoming-message.png" alt="Incoming-message" />
+                                	</div>
+                                </div>
+                                <div class="crd-wrp">
+                                	<div class="box-lbl d-flex align-items-center justify-content-start">
+                                		<div class="d-flex align-items-center justify-content-start">
+                                			<span class="m-0">Incoming Messages</span>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                            	<i class="far fa-clock"></i> In the last hour
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card pink">
+                            <div class="card-body">
+                                <div class="crd-wrp d-flex align-items-center justify-content-between">
+                                	<div class="stat-text crd-inr">
+                                		<span class="count">444</span>
+                                	</div>
+                                	<div class="crd-inr">
+                                		<img src="images/Outgoing-message.png" alt="Outgoing-message" />
+                                	</div>
+                                </div>
+                                <div class="crd-wrp">
+                                	<div class="box-lbl d-flex align-items-center justify-content-start">
+                                		<div class="d-flex align-items-center justify-content-start">
+                                			<span class="m-0">Outgoing Messages</span>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                            	<i class="far fa-clock"></i> In the last hour
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card yellow">
+                            <div class="card-body">
+                                <div class="crd-wrp d-flex align-items-center justify-content-between">
+                                	<div class="stat-text crd-inr">
+                                		<span class="count">500</span>
+                                	</div>
+                                	<div class="crd-inr">
+                                		<!-- <img src="images/saving.png" alt="saving" /> -->
+                                		<img src="images/toggle-off.svg" alt="saving" />
+                                	</div>
+                                </div>
+                                <div class="crd-wrp">
+                                	<div class="box-lbl d-flex align-items-center justify-content-start">
+                                		<div class="d-flex align-items-center justify-content-start">
+                                			<span class="m-0">Cost Savings</span>
+                                		</div>
+                                	</div>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                            	<i class="far fa-calendar"></i> 18/04/2019
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Widgets -->
+                <!-- /Chart -->
+                <div class="row">
+				    <div class="col-lg-12">
+				        <div class="card">
+				            <div class="card-body">
+				                <h4 class="box-title-custom p-0 mb-3">SMS Transactions - Last Week</h4>
+				                <form>
+                                    <div class="d-flex align-items-end flex-wrap filter-form">
+                                        <div class="form-group custom-sumoselect-wrap mb-4">
+                                            <label class=" form-control-label">Device Checklist</label>
+                                            <select id="device-checklist" multiple="multiple" class="form-control control-form SlectBox">
+                                                <option value="Default Device">Default Device</option>
+                                                <option value="UAT-IPSMS-Device">UAT-IPSMS-Device</option>
+                                                <option value="UAT-MMS-Device">UAT-MMS-Device</option>
+                                                <option value="UAT-SMPP">UAT-SMPP</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group custom-sumoselect-wrap mb-4">
+                                            <label class=" form-control-label">Module Checklist</label>
+                                            <select id="module-checklist" multiple="multiple" class="form-control control-form SlectBox">
+                                                <option value="Default Device">Default Device</option>
+                                                <option value="UAT-IPSMS-Device">UAT-IPSMS-Device</option>
+                                                <option value="UAT-MMS-Device">UAT-MMS-Device</option>
+                                                <option value="UAT-SMPP">UAT-SMPP</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <label class=" form-control-label">Select Date From</label>
+                                            
+                                            <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" class="form-control control-form" />
+                                        </div>
+                                        <div class="form-group mb-4">
+                                            <input type="submit" value="Search" class="btn btn-custom bg-green font-white" />
+                                        </div>
+                                    </div>
+				            	</form>
+				            	<div class="chart-div">
+				            		<div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="custom-legend">
+                                                <ul type="none" class="d-flex align-items-center justify-content-center">
+                                                    <li>
+                                                        <i class="fas fa-circle" style="color: #dadad8;"></i>
+                                                        SMS
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-circle" style="color: #9b9b9b;"></i>
+                                                        MMS
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-circle" style="color: #cff1d0;"></i>
+                                                        WA
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-circle" style="color: #eda686;"></i>
+                                                        E-Push
+                                                    </li>
+                                                    <li>
+                                                        <i class="fas fa-circle" style="color: #f8c6c5;"></i>
+                                                        E-MMS
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+				            			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				            				<div id="device-checklist-chart" style="height:350px;"></div>
+				            			</div>
+				            			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+				            				<div id="module-checklist-chart" style="height:350px;"></div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				<div class="row">
+				    <div class="col-lg-5">
+				        <div class="card global-number-block mb-0">
+				            <div class="card-body">
+				                <h4 class="box-title mb-3">Global Numbers</h4>
+				                <div class="table-responsive">
+				                	<table class="table">
+				                		<thead>
+				                			<tr>
+				                				<th>#</th>
+				                				<th>Mobile Number</th>
+				                				<th>Outgoing Messages</th>
+				                			</tr>
+				                		</thead>
+				                		<tbody>
+				                			<tr>
+				                				<td>1.</td>
+				                				<td>9632587410</td>
+				                				<td>3562</td>
+				                			</tr>
+				                			<tr>
+				                				<td>2.</td>
+				                				<td>9874125152</td>
+				                				<td>1592</td>
+				                			</tr>
+				                			<tr>
+				                				<td>3.</td>
+				                				<td>9513578426</td>
+				                				<td>1906</td>
+				                			</tr>
+				                			<tr>
+				                				<td>4.</td>
+				                				<td>8426715984</td>
+				                				<td>1874</td>
+				                			</tr>
+				                			<tr>
+				                				<td>5.</td>
+				                				<td>8624753159</td>
+				                				<td>1174</td>
+				                			</tr>
+				                		</tbody>
+				                	</table>
+				                </div>
+				                <a href="javascript:;" target="_blank">View All Numbers</a>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="col-lg-5">
+				        <div class="card mb-0">
+				            <div class="card-body pb-0">
+				                <h4 class="box-title mb-4">New Users</h4>
+				                <canvas id="newuserchart" style="height: 250px;"></canvas>
+                                <div class="d-flex align-items-center justify-content-between userchart-info">
+                                    <div class="flex-1">
+                                        <h5>85%</h5>
+                                        <p class="font-13 mb-0">Satisfied</p>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h5>10%</h5>
+                                        <p class="font-13 mb-0">Unsatisfied</p>
+                                    </div>
+                                    <div class="flex-1">
+                                        <h5>5%</h5>
+                                        <p class="font-13 mb-0">NA</p>
+                                    </div>
+                                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="col-lg-2">
+				        <div class="card">
+				            <div class="card-body">
+				                <div class="license-info-div text-center">
+				                	<i class="fas fa-certificate"></i>
+				                	<h4>License Information</h4>
+				                	<a href="javascript:;" target="_blank" class="btn btn-custom bg-green font-white">View Details</a>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+            </div>
+            <!-- .animated -->
+        </div>
+        <!-- /.content -->
+        <div class="clearfix"></div>
+        <!-- /.modal -->
+        <div class="modal fade custom-modal-window" id="about-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="scrollmodalLabel">About Us</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">
+                            	<i class="fas fa-times"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="custom-tab">
+                            <nav>
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="about-eems-tab" data-toggle="tab" href="#about-eems" role="tab" aria-controls="about-eems" aria-selected="true">About EEMS</a>
+                                    <a class="nav-item nav-link" id="licenses-tab" data-toggle="tab" href="#licenses" role="tab" aria-controls="licenses" aria-selected="false">Licenses</a>
+                                    <a class="nav-item nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Us</a>
+                                    <a class="nav-item nav-link" id="Conditions-tab" data-toggle="tab" href="#Conditions" role="tab" aria-controls="Conditions" aria-selected="false">Terms & Conditions</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="about-eems" role="tabpanel" aria-labelledby="about-eems-tab">
+                                    <p>EasiSMS Enterprise Messageing Server <br> Version 7.1.4</p>
+                                    <img src="images/About-logo.png" class="img-responsive" alt="Inspire-tech-logo" />
+                                    <a href="javascript:;">www.easisms.com</a>
+									<p>2019 &copy; Inspire-Tech Pte Ltd.</p>
+
+                                </div>
+                                <div class="tab-pane fade" id="licenses" role="tabpanel" aria-labelledby="licenses-tab">
+                                    <p>Licenses</p>
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    <p>Contact</p>
+                                </div>
+                                <div class="tab-pane fade" id="Conditions" role="tabpanel" aria-labelledby="Conditions-tab">
+                                    <p>Terms & Conditions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="site-footer p-0 text-center">
+            <div class="footer-inner bg-white">
+                <p class="m-0">Copyright 2000-2019 Tekki Web Solutions. All right reserved.</p>
+            </div>
+        </footer>
+        <!-- /.site-footer -->
+    </div>
+    <!-- /#right-panel -->
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/daterangepicker.min.js"></script>
+    <script src="js/jquery.sumoselect.js"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/highcharts-theme.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/analytic-dashboard.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        jQuery('#device-checklist').SumoSelect({ 
+            selectAll: true,
+            placeholder: 'Device Checklist'
+        });
+    </script>
+    <script type="text/javascript">
+        jQuery('#module-checklist').SumoSelect({ 
+            selectAll: true,
+            placeholder: 'Module Checklist'
+        });
+    </script>
+    <script>
+		jQuery(function() {
+		  jQuery('input[name="daterange"]').daterangepicker({
+		    opens: 'left'
+		  }, function(start, end, label) {
+		    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+		  });
+		});
+	</script>
+    <!--Local Stuff-->
+	<script>
+		Highcharts.chart('device-checklist-chart', {
+		    chart: {
+		        type: 'column'
+		    },
+		    title: {
+		        text: ''
+		    },
+		    xAxis: {
+		        categories: ['Sep 04', 'Sep 05', 'Sep 06', 'Sep 07', 'Sep 08', 'Sep 09', 'Sep 10']
+		    },
+		    yAxis: {
+		        min: 0,
+		        gridLineColor: '#e5e5e5',
+		        title: {
+		            text: ''
+		        }
+		    },
+		    tooltip: {
+		        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+		        shared: true
+		    },
+		    plotOptions: {
+		        column: {
+		            stacking: 'percent',
+		            pointWidth: 30
+		        }
+		    },
+		    series: [{
+		    	name: 'SMS',
+		    	data: [3, 4, 7, 2, 1, 8, 4]
+		    }, {
+		        name: 'MMS',
+		        data: [2, 2, 3, 2, 1, 9, 7]
+		    }, {
+		        name: 'WA',
+		        data: [2, 2, 3, 2, 1, 7, 4]
+		    }, {
+		        name: 'E-Push',
+		        data: [2, 2, 3, 2, 1, 15, 9]
+		    }, {
+		        name: 'E-MMS',
+		        data: [3, 4, 4, 2, 5, 4, 20]
+		    }]
+		});
+
+		Highcharts.setOptions(Highcharts.theme);
+	</script>
+	<script>
+		Highcharts.chart('module-checklist-chart', {
+		    chart: {
+		        type: 'column'
+		    },
+		    title: {
+		        text: ''
+		    },
+		    xAxis: {
+		        categories: ['Sep 04', 'Sep 05', 'Sep 06', 'Sep 07', 'Sep 08', 'Sep 09', 'Sep 10']
+		    },
+		    yAxis: {
+		        min: 0,
+		        gridLineColor: '#e5e5e5',
+		        title: {
+		            text: ''
+		        }
+		    },
+		    tooltip: {
+		        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+		        shared: true
+		    },
+		    plotOptions: {
+		        column: {
+		            stacking: 'percent',
+		            pointWidth: 30
+		        }
+		    },
+		    series: [{
+		    	name: 'SMS',
+		    	data: [3, 4, 7, 2, 1, 8, 4]
+		    }, {
+		        name: 'MMS',
+		        data: [2, 2, 3, 2, 1, 9, 7]
+		    }, {
+		        name: 'WA',
+		        data: [2, 2, 3, 2, 1, 7, 4]
+		    }, {
+		        name: 'E-Push',
+		        data: [2, 2, 3, 2, 1, 15, 9]
+		    }, {
+		        name: 'E-MMS',
+		        data: [3, 4, 4, 2, 5, 4, 20]
+		    }]
+		});
+
+		Highcharts.setOptions(Highcharts.theme);
+	</script>
+	<script type="text/javascript">
+		jQuery( ".open-custom-slectbox" ).focus(function() {
+			jQuery('.custom-slectbox').hide();
+			jQuery(this).next().show();
+		});
+	</script>
+	<script type="text/javascript">
+		jQuery(".select-all").click(function () {
+    		jQuery(this).closest('.custom-slectbox').find('input:checkbox').not(this).prop('checked', this.checked);
+		});
+	</script>
+    <script type="text/javascript">
+        jQuery('#customtoggle').click(function () {
+            jQuery('#left-panel').slideToggle();
+        });
+    </script>
+</body>
+</html>

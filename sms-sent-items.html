@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="">
+    <![endif]-->
+    <!--[if IE 7]>         
+    <html class="no-js lt-ie9 lt-ie8" lang="">
+        <![endif]-->
+        <!--[if IE 8]>         
+        <html class="no-js lt-ie9" lang="">
+            <![endif]-->
+            <!--[if gt IE 8]><!--> 
+            <html class="no-js" lang="en">
+                <!--<![endif]-->
+                <head>
+                    <meta charset="utf-8">
+                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                    <title>EasiSMS :: Sent Items</title>
+                    <meta name="description" content="">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <link rel="icon" href="images/EasiSMS.ico" type="image/x-icon">
+                    <link rel="stylesheet" href="css/bootstrap.min.css">
+                    <link rel="stylesheet" href="css/all.css">
+                    <link rel="stylesheet" href="css/sumoselect.css">
+                    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+                    <link rel="stylesheet" href="css/cs-skin-elastic.css">
+                    <link rel="stylesheet" href="css/style.css">
+                    <link rel="stylesheet" href="css/custom-style.css">
+                    <link rel="stylesheet" href="css/responsive.css">
+                    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+                </head>
+                <body>
+                    <header id="header" class="header d-flex align-items-center justify-content-between flex-xs-column">
+                        <div class="top-left">
+                            <div class="navbar-header">
+                                <div class="user-area dropdown icon-dropdown float-left">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/sidebar-toggle.png" alt="toggle-icon" />
+                                    </a>
+                                    <div class="user-menu dropdown-menu">
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiEscalate.png" alt="EasiEscalate" /> EasiEscalate
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiInterative.png" alt="EasiInterative" /> EasiInterative
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EEMS.png" alt="EEMS" /> EEMS
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiSmartCast.png" alt="EasiSmartCast" /> EasiSmartCast
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiXchange.png" alt="EasiXchange" /> EasiXchange
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <img src="images/EasiFailOver.png" alt="EasiFailOver" /> EasiFailOver
+                                        <span class="toltip">
+                                        This feature is not <br> applicable in your <br> package
+                                        </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <a class="navbar-brand expaned-nav" href="dashboard.html">
+                                <img src="images/company-logo.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="top-right">
+                            <div class="header-menu">
+                                <ul type="none" class="align-items-center lg-none xs-flex m-0">
+                                    <li>
+                                        <a href="javascript:;" id="customtoggle">
+                                        <i class="menu-icon fas fa-bars"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/message.png" alt="message" />
+                                    <span class="count bg-success">3</span>
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="modal" data-target="#about-window" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/About.png" alt="about-icon" />
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/help.png" alt="about-icon" />
+                                    </a>
+                                </div>
+                                <div class="user-area dropdown float-right">
+                                    <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="user-avatar rounded-circle" src="images/profile.png" alt="User Avatar">
+                                    <span class="usrnm">James Andrew</span>
+                                    <i class="ml-3 fas fa-angle-down"></i>
+                                    </a>
+                                    <div class="user-menu dropdown-menu">
+                                        <a class="nav-link" href="#">
+                                        <i class="far fa-user"></i>Customer Profile
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <i class="fas fa-lock"></i>Change Password
+                                        </a>
+                                        <a class="nav-link" href="#">
+                                        <i class="fas fa-sign-out-alt"></i>EEMS Admin | Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Left Panel -->
+                    <aside id="left-panel" class="left-panel">
+                        <nav class="navbar navbar-expand-sm navbar-default">
+                            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="hidden-in-xs">
+                                        <a href="javascript:;" id="menuToggle">
+                                        <i class="menu-icon fas fa-bars"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="dashboard.html">
+                                        <i class="menu-icon fas fa-chart-bar"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown show">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-envelope"></i>Messages
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu show">
+                                            <li>
+                                                <a href="new-sms.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>New SMS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-inbox.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Inbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="sms-outbox.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Outbox
+                                                </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="javascript:;">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-file-video"></i>MMS Messages
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="new-mms.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>New MMS
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-inbox.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Inbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-outbox.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Outbox
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mms-sent-items.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Sent Items
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-snowflake"></i>Configure
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="devices.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Devices
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Outgoing Routes
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Incoming Rules
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon fas fa-cog"></i>Settings
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="system-settings.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>System Settings
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="blacklist.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Blacklist
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="unsubscribed.html">
+                                                <i class="menu-icon invisible fas fa-circle"></i>Unsubscribed List
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="menu-icon far fa-file-alt"></i>Reports
+                                        </a>
+                                        <ul class="sub-menu children dropdown-menu">
+                                            <li>
+                                                <a href="javascript:;">
+                                                <i class="menu-icon invisible fas fa-circle"></i>SMS Usage
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                <i class="menu-icon invisible fas fa-circle"></i>MMS Usage
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;">
+                                        <i class="menu-icon fab fa-react"></i>ACL
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </nav>
+                    </aside>
+                    <!-- /#left-panel -->
+                    <!-- Right Panel -->
+                    <div id="right-panel" class="right-panel">
+                        <!-- Header-->
+                        <!-- /#header -->
+                        <!-- Content -->
+                        <div class="content">
+                            <!-- Animated -->
+                            <div class="animated fadeIn">
+                                <!-- /Chart -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="card mb-0">
+                                            <div class="card-body p-t-r-b0-l">
+                                                <div class="custom-table-header d-flex align-items-center justify-content-between">
+                                                    <div class="table-filter-wrp">
+                                                        <ul type="none" class="d-flex align-items-center justify-content-between">
+                                                            <li class="position-relative dropdown">
+                                                                <span data-toggle="dropdown">
+                                                                    <img width="16px" src="images/list.svg" class="img-fluid" alt="grid" />
+                                                                </span>
+                                                                <div class="dropdown-menu">
+                                                                    <div class="dropdown-ul">
+                                                                        <ul type="none">
+                                                                            <li>
+                                                                                <label class="checkbox-container">Out Log ID
+                                                                                <input type="checkbox" checked="checked">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Sender ID
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Send To
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Device Name
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">SMS Text
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Status
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Schedule Date | Time
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                            <li>
+                                                                                <label class="checkbox-container">Blacklisted
+                                                                                <input type="checkbox">
+                                                                                <span class="checkbox-checkmark"></span>
+                                                                                </label>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="dropdown-btn d-flex align-items-center justify-content-start">
+                                                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13">Cancel</button>
+                                                                        <button type="button" class="btn btn-custom bg-green font-white font-13">Save</button>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li class="position-relative dropdown">
+                                                                <span data-toggle="dropdown">
+                                                                <input type="text" readonly class="form-control control-form open-custom-slectbox down-arrow" placeholder="SMS device by fail..." />
+                                                                </span>
+                                                                <div class="no-space dropdown-menu">
+                                                                    <div class="dropdown-ul">
+                                                                        <ul class="no-after" type="none">
+                                                                            <li>
+                                                                                <i class="fas fa-search mr-1"></i>
+                                                                                <input type="text" placeholder="Search" class="border-0" />
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                All Messages
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                EW Messages
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                EasiEscalate Messages
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                API Messages
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                Last One Month
+                                                                                </a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="javascript:;">
+                                                                                Last 3 Months
+                                                                                </a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                    <div class="dropdown-btn d-flex align-items-center justify-content-start">
+                                                                        <a href="sms-sent-items-create.html" target="_blank"class="font-13 font-weight-bold">+ Create View</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="sms-sent-items-edit.html" target="_blank">
+                                                                <img width="16px" src="images/pencil.svg" class="img-fluid" alt="pencil" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="table-filter-wrp">
+                                                        <ul type="none" class="d-flex align-items-center justify-content-between bttn-bar">
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <i class="fas fa-redo-alt" data-toggle="tooltip" title="Update"></i>
+                                                                </a>      
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" data-toggle="modal" data-target="#resend-window">
+                                                                    <i class="fas fa-sync-alt" data-toggle="tooltip" title="Resend"></i>
+                                                                </a>      
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" data-toggle="modal" data-target="#forward-window">
+                                                                    <i class="fas fa-reply-all" data-toggle="tooltip" title="Forward"></i>
+                                                                </a>      
+                                                            </li>
+                                                            <li class="border-right">
+                                                                <a href="javascript:;" data-toggle="modal" data-target="#delete-window">
+                                                                    <i class="fas fa-trash-alt" data-toggle="tooltip" title="Delete"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="position-relative open-custom-filter-div">
+                                                                <a href="javascript:;">
+                                                                <i class="fas fa-filter" data-toggle="tooltip" title="Filter"></i>
+                                                                </a>
+                                                                <div class="custom-filter-div lorem">
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="custom-filter-header d-flex align-items-center justify-content-between">
+                                                                                <span>Filter</span>
+                                                                                <span class="close">
+                                                                                <i class="fas fa-times"></i>
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <label class="form-control-label w-100 text-left">Date From</label>
+                                                                            <div class="input-group mb-3">
+                                                                                <input type="text" class="form-control control-form" name="datefrom">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">
+                                                                                    <i class="far fa-calendar-alt"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <label class="form-control-label w-100 text-left">Date To</label>
+                                                                            <div class="input-group mb-3">
+                                                                                <input type="text" class="form-control control-form" name="dateto">
+                                                                                <div class="input-group-append">
+                                                                                    <span class="input-group-text">
+                                                                                    <i class="far fa-calendar-alt"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="form-group">
+                                                                                <label class="form-control-label text-left w-100">Username</label>
+                                                                                <input type="text" class="form-control control-form w-100" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="form-group">
+                                                                                <label class="form-control-label text-left w-100">From Mobile</label>
+                                                                                <input type="tel" class="form-control control-form w-100" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                            <div class="custom-filter-footer d-flex align-items-center justify-content-end">
+                                                                                <button class="btn btn-custom bg-transparent font-black">Cancel</button>
+                                                                                <button class="btn btn-custom bg-green font-white">Apply Filter</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;" data-toggle="modal" data-target="#export-window">
+                                                                    <i class="fas fa-file-excel" data-toggle="tooltip" title="Export"></i>
+                                                                </a>
+                                                            </li>
+                                                            <li class="position-relative">
+                                                                <div class="filter-form d-flex align-items-center">
+                                                                    <div class="form-group">
+                                                                        <i class="fas fa-search"></i>
+                                                                        <input type="text" class="form-control control-form" placeholder="Search..." />
+                                                                    </div>
+                                                                    <div class="sldr-fltr dropdown">
+                                                                        <a href="javascript:;" data-toggle="dropdown">
+                                                                            <i class="fas fa-sliders-h"></i>
+                                                                        </a>
+                                                                        <div class="no-space dropdown-menu">
+                                                                            <div class="dropdown-ul">
+                                                                                <ul type="none" class="no-after">
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Select All
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Out Log ID
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Sender ID
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Send To
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Device Name
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">SMS Text
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Status
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <label class="checkbox-container">Schedule Date | Time
+                                                                                        <input type="checkbox">
+                                                                                        <span class="checkbox-checkmark"></span>
+                                                                                        </label>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="dropdown-btn d-flex align-items-center justify-content-start">
+                                                                                <button type="button" class="btn btn-custom bg-green font-white font-13">Apply</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="custom-table table table-striped table-bordered table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <input type="checkbox" name="Select All" />
+                                                                </th>
+                                                                <th>Out Log ID</th>
+                                                                <th>Sender ID</th>
+                                                                <th>Send To</th>
+                                                                <th>Device Name</th>
+                                                                <th>SMS Text</th>
+                                                                <th>Status</th>
+                                                                <th>Schedule Date | Time</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 1" />
+                                                                </td>
+                                                                <td>413698</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000007</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 2" />
+                                                                </td>
+                                                                <td>413697</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000006</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 3" />
+                                                                </td>
+                                                                <td>413696</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000005</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 4" />
+                                                                </td>
+                                                                <td>413695</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000004</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 5" />
+                                                                </td>
+                                                                <td>413694</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000003</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 6" />
+                                                                </td>
+                                                                <td>413693</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000002</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 7" />
+                                                                </td>
+                                                                <td>413692</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000001</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 8" />
+                                                                </td>
+                                                                <td>413691</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000000</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 9" />
+                                                                </td>
+                                                                <td>413690</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000010</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 10" />
+                                                                </td>
+                                                                <td>413689</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000011</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 11" />
+                                                                </td>
+                                                                <td>413688</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000012</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 12" />
+                                                                </td>
+                                                                <td>413687</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000013</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 13" />
+                                                                </td>
+                                                                <td>413686</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000014</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 14" />
+                                                                </td>
+                                                                <td>413685</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000015</td>
+                                                                <td>Primary</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <input type="checkbox" name="Row 15" />
+                                                                </td>
+                                                                <td>413684</td>
+                                                                <td>Scenario 7</td>
+                                                                <td>80000015</td>
+                                                                <td>Balancing</td>
+                                                                <td>Scenario 7, load</td>
+                                                                <td>S</td>
+                                                                <td>9/27/2019 | 5:15 AM</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between mb-3">
+                                                    <div class="form-group mb-0">
+                                                        <select style="width: 127px;" class="form-control control-form down-arrow">
+                                                            <option value="15 per page">15 per page</option>
+                                                            <option value="30 per page">30 per page</option>
+                                                            <option value="60 per page">60 per page</option>
+                                                            <option value="120 per page">120 per page</option>
+                                                            <option value="240 per page">240 per page</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="pagination-div">
+                                                        <ul class="page-ul d-flex align-items-center justify-content-center mb-0" type="none">
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/arrow-left.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/double-left-arrow.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li class="active-page-with-border">
+                                                                <a href="javascript:;">1</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    /5
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/double-right-arrow.svg" />
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="javascript:;">
+                                                                    <img src="images/arrow-right.svg" />
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>                                              
+                                                    <div class="total-item-label">1 - 15 out of 260 items</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- .animated -->
+                        </div>
+                        <!-- /.content -->
+                        <div class="clearfix"></div>
+                        <!-- / Update modal -->
+                        <div class="modal fade custom-modal-window update-window" id="update-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-body text-center">
+                                        <div class="pop-tick-icon d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-check fa-2x"></i>
+                                        </div>
+                                        <h3 class="m-tb-20">Thank You!</h3>
+                                        <p class="m-0">Your page is updated</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Resend modal -->
+                        <div class="modal fade custom-modal-window resend-window" id="resend-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Reroute</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">
+                                                <i class="fas fa-times"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="text-center">Total: <b>2 Item(s)</b> Selected</p>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Schedule Date & Time</label>
+                                                    <input type="text" name="schedule" value="01/01/2018" class="form-control control-form" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">EasiApp Channel</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="ABS">ABS</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Device</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="Device">Device</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-end">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Forward modal -->
+                        <div class="modal fade custom-modal-window forward-window" id="forward-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Forward</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">
+                                                <i class="fas fa-times"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Mobile Number</label>
+                                                    <input type="text" class="form-control control-form"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Message text</label>
+                                                    <textarea class="form-control control-form text-block-height" rows="4">DBS Poll: 1923</textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Schedule</label>
+                                                    <input type="text" name="schedule" value="01/01/2018" class="form-control control-form" />
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">EasiApp Channel</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="ABS">ABS</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                                <div class="form-group">
+                                                    <label class="form-control-label">Device</label>
+                                                    <select class="form-control control-form down-arrow">
+                                                        <option value="Device">Device</option>
+                                                        <option value="Lorem">Lorem</option>
+                                                        <option value="Ipsum">Ipsum</option>
+                                                        <option value="Dummy">Dummy</option>
+                                                        <option value="Content">Content</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-end">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Delete modal -->
+                        
+                        <div class="modal fade custom-modal-window delete-window" id="delete-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Delete Item(s)</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p>Are you sure you want <br> to delete <b>2 Item(s)</b> only?</p>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Ok</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / Export modal -->
+                        <div class="modal fade custom-modal-window export-window" id="export-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-md d-flex align-items-center justify-content-center h-100" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">Export To Excel</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p>Total: <b>2 Item(s)</b> Selected</p>
+                                        <div class="radio-wrp d-inline-block">
+                                            <label class="radio-container">Item(s) Selected
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Current Page
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                            <label class="radio-container">Whole Grid
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer d-flex align-items-center justify-content-center">
+                                        <button type="button" class="btn btn-custom bg-transparent font-black font-13" data-dismiss="modal">Cancel</button>
+                                        <button type="button" class="btn btn-custom bg-green font-white font-13" data-dismiss="modal">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / About Us modal -->
+                        <div class="modal fade custom-modal-window" id="about-window" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="scrollmodalLabel">About Us</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">
+                                        <i class="fas fa-times"></i>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="custom-tab">
+                                            <nav>
+                                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                                    <a class="nav-item nav-link active" id="about-eems-tab" data-toggle="tab" href="#about-eems" role="tab" aria-controls="about-eems" aria-selected="true">About EEMS</a>
+                                                    <a class="nav-item nav-link" id="licenses-tab" data-toggle="tab" href="#licenses" role="tab" aria-controls="licenses" aria-selected="false">Licenses</a>
+                                                    <a class="nav-item nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact Us</a>
+                                                    <a class="nav-item nav-link" id="Conditions-tab" data-toggle="tab" href="#Conditions" role="tab" aria-controls="Conditions" aria-selected="false">Terms & Conditions</a>
+                                                </div>
+                                            </nav>
+                                            <div class="tab-content pl-3 pt-2" id="nav-tabContent">
+                                                <div class="tab-pane fade show active" id="about-eems" role="tabpanel" aria-labelledby="about-eems-tab">
+                                                    <p>EasiSMS Enterprise Messageing Server <br> Version 7.1.4</p>
+                                                    <img src="images/About-logo.png" class="img-responsive" alt="Inspire-tech-logo" />
+                                                    <a href="javascript:;">www.easisms.com</a>
+                                                    <p>2019 &copy; Inspire-Tech Pte Ltd.</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="licenses" role="tabpanel" aria-labelledby="licenses-tab">
+                                                    <p>Licenses</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                                    <p>Contact</p>
+                                                </div>
+                                                <div class="tab-pane fade" id="Conditions" role="tabpanel" aria-labelledby="Conditions-tab">
+                                                    <p>Terms & Conditions</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer -->
+                        <footer class="site-footer p-0 text-center">
+                            <div class="footer-inner bg-white">
+                                <p class="m-0">Copyright 2000-2019 Tekki Web Solutions. All right reserved.</p>
+                            </div>
+                        </footer>
+                        <!-- /.site-footer -->
+                    </div>
+                    <!-- /#right-panel -->
+                    <!-- Scripts -->
+                    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.min.js"></script>
+                    <script src="js/moment.min.js"></script>
+                    <script src="js/daterangepicker.min.js"></script>
+                    <script src="js/jquery.sumoselect.js"></script>
+                    <script src="js/jquery.matchHeight.min.js"></script>
+                    <script src="js/main.js"></script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="datefrom"]').daterangepicker({
+                                "opens": 'right',
+                                "drops": 'down',
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                startDate: moment().startOf('hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY'
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="dateto"]').daterangepicker({
+                                "opens": 'right',
+                                "drops": 'down',
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                // startDate: moment().startOf('hour'),
+                                endDate: moment().startOf('hour').add(32, 'hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY'
+                                }
+                            });
+                        });
+                    </script>
+                    <script>
+                        jQuery(function() {
+                            jQuery('input[name="schedule"]').daterangepicker({
+                                "opens": 'left',
+                                "drops": 'up',
+                                "timePicker": true,
+                                "singleDatePicker": true,
+                                "autoApply": true,
+                                startDate: moment().startOf('hour'),
+                                locale: {
+                                  format: 'M/DD/YYYY hh:mm A'
+                                }
+                            });
+                        });
+                    </script>
+                    <!--Local Stuff-->
+                    <script type="text/javascript">
+                        jQuery('#customtoggle').click(function () {
+                            jQuery('#left-panel').slideToggle();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery(".select-all").click(function () {
+                            jQuery(this).closest('.custom-slectbox').find('input:checkbox').not(this).prop('checked', this.checked);
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery(document).ready(function () {
+                            jQuery('[data-toggle="tooltip"]').tooltip();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.fas.fa-redo-alt').click(function () {
+                            jQuery('.update-window').modal('show'); 
+                            setTimeout(function() {
+                                jQuery('.update-window').modal('hide');
+                                jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            }, 3000);
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.table-filter-wrp ul.bttn-bar li a').click(function () {
+                            jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            jQuery(this).closest('.table-filter-wrp ul.bttn-bar li').addClass('btn-look');
+                            event.preventDefault();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.close, .btn').click(function () {
+                            if (jQuery('.table-filter-wrp ul.bttn-bar li').hasClass('btn-look')) {
+                                jQuery('.table-filter-wrp ul.bttn-bar li').removeClass('btn-look');
+                            }
+                            event.preventDefault();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.open-custom-filter-div a').click(function () {
+                            jQuery('.custom-filter-div').show();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery(".custom-filter-div").delegate(".close", "click",function(){
+                            jQuery('.custom-filter-div').hide();
+                        });
+                    </script>
+                    <script type="text/javascript">
+                        jQuery('.dropdown-menu').on('click', function(e) {
+                            if(jQuery(this).hasClass('show')) {
+                                e.stopPropagation();
+                            }
+                        });
+                    </script>
+                </body>
+            </html>
